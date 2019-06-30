@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.clinica.patient">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Core.Clinica"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activities.QuestionList.QuestionListActivity"></activity>
+        <activity android:name=".Activities.Question.QuestionActivity" />
+        <activity android:name=".Activities.Doctor.Booking.BookingActivity" />
+        <activity android:name=".Activities.CategoryDetails.CategoryDetailsActivity" />
+        <activity
+            android:name=".Activities.ImagePickerActivity"
+            android:theme="@style/AppTheme.Transparent" />
+        <activity android:name="com.yalantis.ucrop.UCropActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Splash.SplashActivity"
+            android:theme="@style/AppTheme.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Auth.Login.LoginActivity"
+            android:theme="@style/AppTheme.Auth" />
+        <activity
+            android:name=".Activities.Auth.SignUp.SignupActivity"
+            android:theme="@style/AppTheme.Auth" />
+        <activity
+            android:name=".Activities.Auth.ForgetPassword.ForgetPasswordActivity"
+            android:theme="@style/AppTheme.Auth"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.Selector.SelectorActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.Main.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activities.SearchWithActivity"
+            android:label="@string/doctor_search_title" />
+        <activity
+            android:name=".Activities.Doctor.DoctorsList.DoctorListActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".Activities.Doctor.DoctorProfile.DoctorProfileActivity"
+            android:label="@string/doctor_profile_title" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".Services.FetchAddressIntentService"
+            android:exported="false" />
+    </application>
+
+</manifest>

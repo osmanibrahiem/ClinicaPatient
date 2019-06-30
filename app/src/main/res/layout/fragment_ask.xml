@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AskFragment">
+
+    <include layout="@layout/app_bar_layout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <TextView
+            android:id="@+id/header_txt"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/search_corners_radius"
+            android:gravity="center"
+            android:text="@string/header_txt"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/input_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/search_MarginStartEnd"
+            android:layout_marginTop="@dimen/home_menu_item_marginTop"
+            android:layout_marginEnd="@dimen/search_MarginStartEnd"
+            android:layout_marginBottom="@dimen/home_menu_item_marginTop"
+            android:background="@drawable/edittext_border"
+            android:gravity="start|top"
+            android:hint="@string/message_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:maxLines="7"
+            android:minLines="5"
+            android:paddingStart="@dimen/d18"
+            android:paddingTop="@dimen/d8"
+            android:paddingEnd="@dimen/d18"
+            android:paddingBottom="@dimen/d8"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/font_size_med"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_txt" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/specialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_menu_item_marginTop"
+            android:background="@drawable/edittext_border"
+            android:clickable="false"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="@string/specialization_selector_title"
+            android:imeOptions="actionNone"
+            android:inputType="none"
+            android:minWidth="180dp"
+            android:paddingStart="@dimen/d18"
+            android:paddingTop="@dimen/d8"
+            android:paddingEnd="@dimen/d18"
+            android:paddingBottom="@dimen/d8"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/font_size_med"
+            app:layout_constraintStart_toStartOf="@id/input_message"
+            app:layout_constraintTop_toBottomOf="@id/input_message" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/img_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/search_MarginTop"
+            android:layout_marginTop="@dimen/home_menu_item_marginTop"
+            android:layout_marginEnd="@dimen/search_MarginTop"
+            android:layout_marginBottom="@dimen/search_MarginTop"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="@id/input_message"
+            app:layout_constraintStart_toStartOf="@id/input_message"
+            app:layout_constraintTop_toBottomOf="@id/specialization">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/d66"
+                android:layout_height="@dimen/d66"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder"
+                app:layout_constraintBottom_toBottomOf="@id/choose_btn"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@id/choose_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/choose_btn" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/choose_btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/transparent_button"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/d20"
+                android:paddingTop="@dimen/d2"
+                android:paddingEnd="@dimen/d20"
+                android:paddingBottom="@dimen/d2"
+                android:text="@string/choose_picture"
+                android:textAllCaps="false"
+                android:textColor="@color/text_dec"
+                android:textSize="@dimen/font_size_xlarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/ask_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_item_image_size"
+            android:background="@drawable/curved_gradiant_button"
+            android:enabled="false"
+            android:minWidth="@dimen/d4"
+            android:minHeight="@dimen/d4"
+            android:paddingStart="@dimen/home_item_image_size"
+            android:paddingTop="@dimen/d4"
+            android:paddingEnd="@dimen/home_item_image_size"
+            android:paddingBottom="@dimen/d4"
+            android:text="@string/ask"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_large"
+            app:layout_constraintBottom_toTopOf="@id/footer_txt"
+            app:layout_constraintEnd_toEndOf="@id/input_message"
+            app:layout_constraintStart_toStartOf="@id/input_message"
+            app:layout_constraintTop_toBottomOf="@id/img_container" />
+
+        <TextView
+            android:id="@+id/footer_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/search_corners_radius"
+            android:text="@string/ask_footer_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_med"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/input_message"
+            app:layout_constraintStart_toStartOf="@id/input_message" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

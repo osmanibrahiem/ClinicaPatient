@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Clinica</string>
+    <string name="facebook_app_id" translatable="false">2377149485902357</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2377149485902357</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password"><u>Forget Password?</u></string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="sign_up_title">Sign up</string>
+    <string name="login_with">or login with</string>
+    <string name="sign">Sign Up</string>
+    <string name="confirm">Confirm</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="empty_email">Enter your email</string>
+    <string name="empty_name">Enter your name</string>
+    <string name="empty_phone">Enter your phone</string>
+    <string name="invalid_email">Enter a valid email</string>
+    <string name="invalid_phone">Enter a valid phone number</string>
+    <string name="empty_password">Enter your password</string>
+    <string name="invalid_password">Wrong password. Try again or click Forgot password to reset it.</string>
+    <string name="invalid_password_2">Wrong password.</string>
+    <string name="invalid_password_3">Password Confirmation doesn\'t match with password.</string>
+    <string name="error_happened">Sorry there is an error occurred during authentication. Please try again later.</string>
+    <string name="location_error_happened">Sorry there is an error occurred during getting your location. Please try again later.</string>
+    <string name="message_no_internet">No data connection</string>
+    <string name="sex">Gender</string>
+    <string-array name="sex_items">
+        <item>Select your gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string name="city">City</string>
+    <string name="birthday">Birthday</string>
+    <string name="search_hint">Search &#8230;</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="ucrop_label_original">Original</string>
+    <string name="ucrop_label_edit_photo">Edit Photo</string>
+    <string name="ucrop_menu_crop">Crop</string>
+    <string name="ucrop_rotate">Rotate</string>
+    <string name="ucrop_scale">Scale</string>
+    <string name="ucrop_crop">Crop</string>
+    <string name="gender_error">You must select your gender.</string>
+    <string name="city_error">You must select your city.</string>
+    <string name="city_selector_title">Select your city.</string>
+    <string name="city_selector_search_hint">Search in cities</string>
+    <string name="empty_list">No related results available.</string>
+    <string name="empty_birthday">Enter your birthday</string>
+    <string name="invalid_birthday">Enter a valid birthday</string>
+    <string name="email_sent_success">Email sent successfuly</string>
+    <string name="how_can_we_help_you">How can we help you?</string>
+    <string name="doctors">Doctors</string>
+    <string name="num_doctors" formatted="false">%d Doctors</string>
+    <string name="diseases">Diseases</string>
+    <string name="num_diseases" formatted="false">%d Diseases</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="num_symptoms" formatted="false">%d Symptoms</string>
+    <string name="last_news_title">Last News</string>
+    <string name="see_all">See All</string>
+    <string name="bank_of_questions">Bank of Questions</string>
+    <string name="show_answer"><u>Show answer</u></string>
+
+    <string name="jsut_now">Just Now</string>
+    <string name="_1_minute_ago">1 minute ago</string>
+    <string name="_2_minute_ago">2 minutes ago</string>
+    <string name="_3__10_minute_ago">%1$d minutes ago</string>
+    <string name="_11_minute_ago">%1$d minutes ago</string>
+
+    <string name="_1_hours_ago">1 hour ago</string>
+    <string name="_2_hours_ago">2 hours ago</string>
+    <string name="_3_10_hours_ago">%1$d hours ago</string>
+    <string name="_11_hours_ago">%1$d hours ago</string>
+
+    <string name="_1_days_ago">Yesterday</string>
+    <string name="_2_days_ago">2 days ago</string>
+    <string name="_3_10_days_ago">%1$d days ago</string>
+    <string name="book_best_doctor_text">Book the best doctor in the fastest time.</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="search_by_specialization">Search by Specialization</string>
+    <string name="doctor_search_title">Search for Doctor</string>
+    <string name="specialization_selector_title">Choose the specialty</string>
+    <string name="specialization_selector_search_hint">Search in Specialty</string>
+    <string name="doctor_list_title">Search in</string>
+    <string name="doctor_list_search_hint">Search in Doctors</string>
+    <string name="book_now">Book Now</string>
+    <string name="appointments">Appointments</string>
+    <string name="doctor_profile_title">Doctor Profile</string>
+    <string name="diseases_selector_title">Choose the disease</string>
+    <string name="diseases_selector_search_hint">Search in diseases</string>
+    <string name="diseases_details_title">Disease Details</string>
+    <string name="visitors_rates_count">%1$d visitors</string>
+    <string name="price">price : %1$,.2f LE</string>
+    <string name="message_doctor_not_found">Sorry! Doctor Details not found. try again.</string>
+    <string name="address_en">Address</string>
+    <string name="address_ar">العنوان</string>
+    <string name="street_name_en">Street Name</string>
+    <string name="street_name_ar">إسم الشارع</string>
+    <string name="floor_en">Floor</string>
+    <string name="floor_ar">الدور</string>
+    <string name="apartment_en">Apartment</string>
+    <string name="apartment_ar">الشقة</string>
+    <string name="landmark_en">Landmark</string>
+    <string name="landmark_ar">علامة مميزة</string>
+    <string name="building_number_en">Building Number</string>
+    <string name="building_number_ar">رقم المبنى</string>
+    <string name="state_en">State</string>
+    <string name="state_ar">المنطقة</string>
+    <string name="all_governorates">All governorates</string>
+    <string name="current_location">Current location</string>
+
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="date">Date :</string>
+    <string name="duration">Duration :</string>
+    <string name="minute">%1$d minutes</string>
+    <string name="booking_price">%1$,.2f LE</string>
+    <string name="examination">Examination :</string>
+    <string name="notes">Notes</string>
+    <string name="booking_confirmation_title">Booking Confirmation</string>
+    <string name="data_not_found">This data doesn\'t exist anymore</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_happened_2">Sorry there is an error occurred during saving. Please try again later.</string>
+    <string name="booking_saved_success">Booking saved successfully</string>
+    <string name="question_saved_success">Question saved successfully</string>
+    <string name="examination_canceled">Examination Canceled</string>
+    <string name="examination_done">Examination Done</string>
+    <string name="booking_confirm">Confirm Booking</string>
+    <string name="booking_accepted_by_doctor">Dr. %1$s has agreed to the date of your booking on %2$s</string>
+    <string name="booking_refused_by_doctor">Sorry! Dr. %1$s has declined your booking</string>
+    <string name="booking_canceled_by_doctor">Sorry! Your Booking has been canceled at Dr. %1$s Clinic</string>
+    <string name="user_requested_booking">%1$s asked for a new booking on %2$s</string>
+    <string name="user_canceled_booking">%1$s\'s booking has been canceled</string>
+    <string name="user_requested_question">%1$s asked for medical consultation</string>
+    <string name="doctor_answered_question">Dr. %1$s responded to your consultation</string>
+    <string name="home_title">Home</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="appointments_title">My Appointments</string>
+    <string name="questions_title">Ask Doctor</string>
+    <string name="profile_title">Profile</string>
+    <string name="ask_footer_txt">- If the medical condition is urgent, we recommend that you go to the doctor immediately\n- Your question and information will remain confidential\n- Time available to answer 1: 5 minutes</string>
+    <string name="ask">Ask</string>
+    <string name="choose_picture">Attach Picture</string>
+    <string name="message_hint">Explain briefly what you are suffering from</string>
+    <string name="header_txt">Get an answer to your question now</string>
+    <string name="send">Send</string>
+
+
+</resources>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".Activities.Home.HomeFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/header_ConstraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/rectangle_toolbar"
+            app:layout_constraintDimensionRatio="1080:532"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ads_recycler"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:padding="@dimen/home_logo_image_padding"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/pageIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d10"
+                android:padding="@dimen/d8"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:piv_animationType="swap"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_padding="4dp"
+                app:piv_radius="3dp"
+                app:piv_selectedColor="#005c7b"
+                app:piv_unselectedColor="#f6f6f6" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/categories_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_ConstraintLayout">
+
+            <TextView
+                android:id="@+id/categories_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/d14"
+                android:paddingEnd="@dimen/d14"
+                android:text="@string/how_can_we_help_you"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintDimensionRatio="1080:142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categories_title">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/doctors_btn"
+                        android:layout_width="@dimen/d115"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d14"
+                        android:layout_marginEnd="@dimen/d5"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="@dimen/d115"
+                            android:layout_height="@dimen/d115"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/doctors_cat"
+                            app:civ_border_color="@color/home_category_border"
+                            app:civ_border_width="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:minHeight="@dimen/d1"
+                            android:text="@string/doctors"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/title_text_size" />
+
+                        <TextView
+                            android:id="@+id/doctors_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/num_doctors"
+                            android:textSize="@dimen/home_item_text_size"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/diseases_btn"
+                        android:layout_width="@dimen/d115"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d5"
+                        android:layout_marginEnd="@dimen/d5"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="@dimen/d115"
+                            android:layout_height="@dimen/d115"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/diseases_cat"
+                            app:civ_border_color="@color/home_category_border"
+                            app:civ_border_width="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:minHeight="@dimen/d1"
+                            android:text="@string/diseases"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/title_text_size" />
+
+                        <TextView
+                            android:id="@+id/diseases_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/num_diseases"
+                            android:textSize="@dimen/home_item_text_size"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/symptoms_btn"
+                        android:layout_width="@dimen/d115"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d5"
+                        android:layout_marginEnd="@dimen/d14"
+                        android:orientation="vertical">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:layout_width="@dimen/d115"
+                            android:layout_height="@dimen/d115"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/syndrome_cat"
+                            app:civ_border_color="@color/home_category_border"
+                            app:civ_border_width="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:minHeight="@dimen/d1"
+                            android:text="@string/symptoms"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/title_text_size" />
+
+                        <TextView
+                            android:id="@+id/symptoms_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/num_symptoms"
+                            android:textSize="@dimen/home_item_text_size"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/news_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categories_section">
+
+            <TextView
+                android:id="@+id/news_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/d14"
+                android:paddingEnd="@dimen/d14"
+                android:text="@string/last_news_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintDimensionRatio="1080:142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/see_all_news_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/d14"
+                android:background="@drawable/curved_gradiant_button"
+                android:minHeight="@dimen/d4"
+                android:paddingStart="@dimen/d20"
+                android:paddingEnd="@dimen/d20"
+                android:text="@string/see_all"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_large"
+                app:layout_constraintBottom_toBottomOf="@id/news_title"
+                app:layout_constraintEnd_toEndOf="@id/news_title"
+                app:layout_constraintTop_toTopOf="@id/news_title" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/news_recycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/news_title" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/consultation_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/news_section">
+
+            <TextView
+                android:id="@+id/consultation_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/d14"
+                android:paddingEnd="@dimen/d14"
+                android:text="@string/bank_of_questions"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                app:layout_constraintDimensionRatio="1080:142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/see_all_consultations_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/d14"
+                android:background="@drawable/curved_gradiant_button"
+                android:minHeight="@dimen/d4"
+                android:paddingStart="@dimen/d20"
+                android:paddingEnd="@dimen/d20"
+                android:text="@string/see_all"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_large"
+                app:layout_constraintBottom_toBottomOf="@id/consultation_title"
+                app:layout_constraintEnd_toEndOf="@id/consultation_title"
+                app:layout_constraintTop_toTopOf="@id/consultation_title" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/consultation_recycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/consultation_title" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

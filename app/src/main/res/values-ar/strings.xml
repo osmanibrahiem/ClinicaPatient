@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clinica</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="forget_password"><u>نسيت كلمة السر؟</u></string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="reset">إرسال</string>
+    <string name="sign_up"><u>إنشاء حساب</u></string>
+    <string name="sign_up_title">إنشاء الحساب</string>
+    <string name="login_with">أو قم بتسجيل الدخول باستخدام</string>
+    <string name="sign">إنشاء</string>
+    <string name="confirm">إعادة كلمة السر</string>
+    <string name="phone">رقم التليفون</string>
+    <string name="name">إسم المستخدم</string>
+    <string name="empty_email">يجب إدخال البريد الإلكتروني</string>
+    <string name="invalid_email">يجب إدخال بريد إلكتروني صالح</string>
+    <string name="empty_password">يجب إدخال كلمة السر</string>
+    <string name="invalid_password">كلمة مرور خاطئة. أعد المحاولة، أو انقر على \"نسيت كلمة السر\" لإعادة تعيينها.</string>
+    <string name="error_happened">عذرا لقد حدث خطأ فى عملية تسجيل الدخول. برجاء المحاولة مرة اخرى.</string>
+    <string name="location_error_happened">عذرا لقد حدث خطأ فى تحديد موقعك الحالى. برجاء المحاولة مرة اخرى.</string>
+    <string name="message_no_internet">لا يوجد اتصال بالانترنت</string>
+    <string name="empty_name">يجب إدخال الإسم</string>
+    <string name="empty_phone">يجب إدخال رقم الهاتف</string>
+    <string name="invalid_password_2">كلمة السر خاطئة</string>
+    <string name="invalid_password_3">تأكيد كلمة السر لا تشابه كلمة السر</string>
+    <string name="invalid_phone">يجب إدخال رقم هاتف صحيح</string>
+    <string name="sex">النوع</string>
+    <string-array name="sex_items">
+        <item>اختر النوع</item>
+        <item>أنثى</item>
+        <item>ذكر</item>
+    </string-array>
+    <string name="city">المدينة</string>
+    <string name="birthday">تاريخ الميلاد</string>
+    <string name="search_hint">ابحث &#8230;</string>
+    <string name="msg_error_unable_select_profile_pic">غير قادر على تعيين صورة الملف الشخصي. حاول مرة اخرى!</string>
+    <string name="lbl_set_profile_photo">تعيين صورة الملف الشخصي</string>
+    <string name="lbl_take_camera_picture">التقط صوره</string>
+    <string name="lbl_choose_from_gallery">اختر من المعرض</string>
+    <string name="toast_image_intent_null">خيار منتقي الصور مفقود!</string>
+    <string name="dialog_permission_title">منح الأذونات</string>
+    <string name="dialog_permission_message">يحتاج هذا التطبيق إلى إذن لاستخدام هذه الميزة. يمكنك منحهم في إعدادات التطبيق.</string>
+    <string name="go_to_settings">الذهاب للاعدادات</string>
+    <string name="ucrop_label_original">الأصلي</string>
+    <string name="ucrop_label_edit_photo">تعديل الصورة</string>
+    <string name="ucrop_menu_crop">تم</string>
+    <string name="ucrop_rotate">تدوير</string>
+    <string name="ucrop_scale">تكبير / تصغير</string>
+    <string name="ucrop_crop">قص</string>
+    <string name="gender_error">يجب إختيار النوع.</string>
+    <string name="city_error">يجب إختيار المدينة.</string>
+    <string name="city_selector_title">اختر مدينتك</string>
+    <string name="city_selector_search_hint">البحث فى المدن</string>
+    <string name="empty_list">لا توجد اي نتائج متعلقة</string>
+    <string name="empty_birthday">يجب إدخال تاريخ الميلاد</string>
+    <string name="invalid_birthday">يجب إدخال تاريخ الميلاد صحيح</string>
+    <string name="email_sent_success">تم إرسال رسالة الإسترجاع الى البريد الإلكتروني</string>
+    <string name="how_can_we_help_you">كيف يمكننا مساعدتك؟</string>
+    <string name="doctors">الأطباء</string>
+    <string name="num_doctors" formatted="false">%d طبيب</string>
+    <string name="diseases">الأمراض</string>
+    <string name="num_diseases" formatted="false">%d مرض</string>
+    <string name="symptoms">الأعراض</string>
+    <string name="num_symptoms" formatted="false">%d عرض</string>
+    <string name="last_news_title">آخر الأخبار الطبية</string>
+    <string name="see_all">عرض الكل</string>
+    <string name="bank_of_questions">بنك الأسئلة</string>
+    <string name="show_answer"><u>عرض الإجابة</u></string>
+
+    <string name="jsut_now">الآن</string>
+    <string name="_1_minute_ago">منذ دقيقة واحدة</string>
+    <string name="_2_minute_ago">منذ دقيقتان</string>
+    <string name="_3__10_minute_ago">منذ %1$d دقائق</string>
+    <string name="_11_minute_ago">منذ %1$d دقيقة</string>
+
+    <string name="_1_hours_ago">منذ ساعة واحدة</string>
+    <string name="_2_hours_ago">منذ ساعتان</string>
+    <string name="_3_10_hours_ago">منذ %1$d ساعات</string>
+    <string name="_11_hours_ago">منذ %1$d ساعة</string>
+
+    <string name="_1_days_ago">الأمس</string>
+    <string name="_2_days_ago">منذ يومان</string>
+    <string name="_3_10_days_ago">منذ %1$d أيام</string>
+    <string name="book_best_doctor_text">احجز اشطر دكتور فى اسرع وقت.</string>
+    <string name="search_by_name">البحث بالإسم</string>
+    <string name="search_by_specialization">البحث بالتخصص</string>
+    <string name="doctor_search_title">البحث عن طبيب</string>
+    <string name="specialization_selector_title">اختر التخصص</string>
+    <string name="specialization_selector_search_hint">ابحث فى التخصصات</string>
+    <string name="doctor_list_title">البحث في</string>
+    <string name="doctor_list_search_hint">ابحث في الأطباء</string>
+    <string name="book_now">احجز الان</string>
+    <string name="appointments">المواعيد</string>
+    <string name="doctor_profile_title">بيانات الطبيب</string>
+    <string name="diseases_selector_title">الأمراض</string>
+    <string name="diseases_selector_search_hint">ابحث في الأمراض</string>
+    <string name="diseases_details_title">تفاصيل المرض</string>
+    <string name="visitors_rates_count">%1$d زائر</string>
+    <string name="price">سعر الكشف : %1$,.2f جنية</string>
+    <string name="message_doctor_not_found">عفوا البيانات المطلوبة غير متوفرة الان. حاول مرة اخرى.</string>
+    <string name="all_governorates">كل المحافظات</string>
+    <string name="current_location">الموقع الحالى</string>
+    <string name="address_en">Address</string>
+    <string name="address_ar">العنوان</string>
+    <string name="street_name_en">Street Name</string>
+    <string name="street_name_ar">إسم الشارع</string>
+    <string name="floor_en">Floor</string>
+    <string name="floor_ar">الدور</string>
+    <string name="apartment_en">Apartment</string>
+    <string name="apartment_ar">الشقة</string>
+    <string name="landmark_en">Landmark</string>
+    <string name="landmark_ar">علامة مميزة</string>
+    <string name="building_number_en">Building Number</string>
+    <string name="building_number_ar">رقم المبنى</string>
+    <string name="state_en">State</string>
+    <string name="state_ar">المنطقة</string>
+
+    <string name="no_location_data_provided">لم يتم تقديم بيانات الموقع</string>
+    <string name="service_not_available">عذرا ، الخدمة غير متوفرة</string>
+    <string name="invalid_lat_long_used">خط العرض أو خط الطول غير صالحين</string>
+
+    <string name="permission_rationale">مطلوب إذن الموقع للوظيفة الأساسية</string>
+    <string name="permission_denied_explanation">تم رفض الإذن ، ولكن هناك حاجة للوظيفة الأساسية.</string>
+    <string name="date">موعد الكشف :</string>
+    <string name="duration">المدة :</string>
+    <string name="minute">%1$d دقيقة</string>
+    <string name="booking_price">%1$,.2f جنية</string>
+    <string name="examination">الكشف :</string>
+    <string name="notes">الملاحظات</string>
+    <string name="booking_confirmation_title">تأكيد الحجز</string>
+    <string name="data_not_found">هذه البيانات غير موجودة الآن</string>
+    <string name="today">اليوم</string>
+    <string name="tomorrow">غداَ</string>
+    <string name="cancel">إلغاء الحجز</string>
+    <string name="error_happened_2">عذرًا ، حدث خطأ أثناء الحفظ. الرجاء معاودة المحاولة في وقت لاحق.</string>
+    <string name="booking_saved_success">تم اضافة الحجز بنجاح</string>
+    <string name="question_saved_success">تم اضافة سؤالك بنجاح</string>
+    <string name="examination_canceled">تم إلغاء الحجز</string>
+    <string name="examination_done">تم الكشف</string>
+    <string name="booking_confirm">تأكيد الحجز</string>
+    <string name="booking_accepted_by_doctor">لقد وافق الدكتور. %1$s على موعد الحجز الخاص بك يوم %2$s</string>
+    <string name="booking_refused_by_doctor">عفواً! لقد رفض الدكتور. %1$s موعد الحجز الخاص بك</string>
+    <string name="booking_canceled_by_doctor">عفواً! لقد تم إلغاء موعد الحجز الخاص بك فى عيادة الدكتور. %1$s</string>
+    <string name="user_requested_booking">لقد طلب %1$s موعد حجز جديد يوم %2$s</string>
+    <string name="user_canceled_booking">لقد تم إلغاء موعد الحجز الخاص ب%1$s</string>
+    <string name="user_requested_question">لقد طلب %1$s استشارة طبية</string>
+    <string name="doctor_answered_question">لقد أجاب الدكتور. %1$s على استشارتك</string>
+    <string name="home_title">الرئيسية</string>
+    <string name="notifications_title">الإشعارات</string>
+    <string name="appointments_title">مواعيدي</string>
+    <string name="questions_title">اسأل الطبيب</string>
+    <string name="profile_title">الحساب</string>
+    <string name="ask_footer_txt">- اذا كانت الحالة الطبية طارئة ننصحك بالذهاب للطبيب فورا\n- سؤالك ومعلوماتك ستبقى سرية\n- الوقت المتاح للاجابة 1 : 5 دقائق</string>
+    <string name="ask">اسأل</string>
+    <string name="choose_picture">ارفاق صورة</string>
+    <string name="message_hint">اشرح باختصار الاعراض التى تعانى منها</string>
+    <string name="header_txt">أحصل على اجابة لسؤالك الان</string>
+    <string name="send">ارسال</string>
+
+</resources>
